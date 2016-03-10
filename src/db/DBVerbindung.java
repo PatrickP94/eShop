@@ -21,6 +21,7 @@ public class DBVerbindung
 
 	public void oeffneDB()
 	{
+		System.out.println("hallo");
 		try
 		{
 			System.out.println("* Treiber laden");
@@ -37,7 +38,7 @@ public class DBVerbindung
 		// Connection
 		try
 		{
-			Connection conn = DriverManager.getConnection( "jdbc:mysql://localhost/bücher?user=root&password=root");
+			Connection conn = DriverManager.getConnection( "jdbc:mysql://localhost:3306/bücher?user=root&password=patrick");
 			stmtSQL = conn.createStatement(); // (3)
 			System.out.println("Connection etabliert");
 		}
